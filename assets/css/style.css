@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#e9e0e9;
+    --primary-color:#d7cdd7;
   }
   
   * {
@@ -9,9 +9,9 @@
     }
   
   body {
-      color: #c38cbf;
+      color: #d4c5d3;
       font-family: Helvetica, Arial, sans-serif;
-      background-color: rgb(229, 232, 238);
+      background-color: rgb(82, 53, 80);
     }
   
   /* apply styles to <header> */
@@ -42,7 +42,10 @@
     align-items: center;
     list-style: none;
     }
-  
+  #profile{
+    width: 200px;
+    margin: auto;
+  }
   header nav ul li a {
       margin: 0 20px;
       font-weight: dark;
@@ -56,40 +59,17 @@
   section {
       padding :7px;
   }
+/*Add employees photo*/
+#mainimage{
+width: 200px;
+margin: auto;
 
-  
-/*apply style to hero image*/
-.hero{
-    height: 400px;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  
-  /*Add employees photo*/
-.image2 {
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    border: 3px var(--primary-color) solid;
-    height:150px;
-    width: 150px;
-  }
-  
-.hero h2 {
-    font-style: oblique;
-    font-size: 20px;
-    color: var(--primary-color);
-    margin-top: 300px;
-    background-color:rgb(229, 232, 238);
-  }
+}
+#profilediv{
+    text-align: center;
+}
 
-  
-/*Work section style*/
+  /*Projects section style*/
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -98,150 +78,76 @@
     width: 90%;
     align-items: center;
   }
-  
-.flex-row {
-    display: flex;
-    justify-content: left;
+  .flex-row {
+    
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+
   }
-  
+
+.vl-border2{
+    border-right: 3px solid #b3c3c5;
+    height: 150px;
+    
+}
+#stock{
+    width: 200px;
+    margin: auto;
+}
+#stockphotodiv{
+    text-align: center;
+}
+/*About section*/
 .section-title {
     font-size: 35px;
+    margin: auto;
     font-family:oblique;
-    color: #de77c6;
-    margin: 0 0 0 80px;
+    color: #e5d2de;
     width: 50%;
   }
-  
-.step-info{
-    flex :2 20%;
+  .step-info {
+    flex: 3 30%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 70%;
   }
-  
-.vl-border1 {
-    border-right: 3px solid #de77c6;
+  .vl-border1 {
+    border-right: 3px solid #b3c3c5;
     height: 150px;
-    flex: 2 1%;
   }
-  
-.step-text {
+  .step-text {
     flex: 25;
   }
-  
-.step-text p {
+  .step-text p {
     color: var(--primary-color);
     font-size: 15px;
     text-align: left;
     line-height: 1.3;
     margin-left: 30px;
     width: 100%;
-  }
-  
-.vl-border2{
-    border-right: 3px solid #39a6b2;
-    height: 450px;
-    flex: 2 5%;  
-    
-  }
+  }  
+  /*contact section*/
 
-.container{
-    flex:80;
-  }
-  
-.container {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center; 
-    margin-left: 15px;
-    width: 80%;  
-      
-  }
-  
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 10vw);
-    grid-gap: 15px;
-    margin-left: 30px;     
-    
-  }
-  
-.gallery__item{
-  position: relative;
-}
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: solid 1px var(--primary-color);  
- }
-
-figcaption{
-  position: absolute;
-  margin-left: 5px;
-  margin-top: -20%;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
-  color:  rgb(22, 44, 44);
-  border: solid 1px var(--primary-color);
-  background-color: rgb(229, 232, 238);
-}
-  
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  position: relative;
-  
-  }
-  
-.gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    }
-  
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  }
-  
-.gallery__item--4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  }
-  
-.gallery__item--5 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  }
-
-  
-/*About section style*/
-.vl-border3 {
-    border-right: 3px solid #39a6b2;
-    height: 100px;
-    flex: 2 5%;
-   
-  }
-  
-.contact-info {
-    flex: 150;
-  }
-  .contact-info ul {
+.contact{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px 50px;  
+    width: 90%;
+    align-items: center;
+}
+.vl-border3{
+    border-right: 3px solid #b3c3c5;
+    height: 150px;
+    
+
+}
+  .contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: left;
     list-style: none;
     margin-left: 15px;
@@ -249,103 +155,13 @@ figcaption{
     }
   
 .contact-info ul li a {
-      margin: 0 30px;
-      font-size: 18px;
+      margin: 10 20px;
+      font-size: 12px;
       color: var(--primary-color);
       text-decoration: none;
-      border-bottom: 3px solid;
-      padding-bottom: 2px;
-    }
-
-.resume{
-  margin: 20px 20px;
-  color: #024e76;
-}
-    
- /*Code for media query*/
-
-@media screen and (max-width: 980px) {
-    header {
+      border-bottom: 2px solid;
       padding-bottom: 10px;
-      justify-content: center;
     }
   
-    header h1 {
-      width: 100%;
-      text-align: center;
-    }
+
   
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-      flex-direction: row;
-      line-height: 1.5;
-    }
-  
-    header nav ul li a {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .hero{
-      background-size: cover;
-    }
-
-    .image2{
-      height: 100px;
-      width: 100px;
-    }
-    .hero h2 {      
-      font-size: 10px;
-      margin-top: 350px;
-      }
-
-    .step-text p{
-        width: 85%;
-      }
-
-    .section-title {
-      width: 100%;
-      text-align: right;
-      font-weight: bold;
-    }
-
-    .vl-border1 {      
-      height: 350px;     
-    }
-
-  .vl-border2{
-    height: 280px;     
-  }  
-    .container{
-      width: 100%;
-    }
-    .contact-info ul {     
-      width: 100%;
-      justify-content: left;
-      flex-direction: column;      
-  }
-    
-    .contact-info ul li a {
-        font-size: 18px;
-        line-height: 2;  
-        font-weight: bold;
-  }
-
-    .vl-border3{
-        height: 180px;
-    }
-
-    .image2 {
-        top:200px;
-    }
-      
-    figcaption{
-        margin-left: 5px;
-        margin-top: -45%;
-        font-size: 5px;
-    }
-
-  }
-footer
