@@ -81,22 +81,37 @@ margin: auto;
   .flex-row {
     
     justify-content: center;
-    width: 30%;
+    width: 50%;
     text-align: center;
 
   }
+ 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 
-.vl-border2{
-    border-right: 3px solid #b3c3c5;
-    height: 150px;
-    
-}
 #stock{
     width: 200px;
     margin: auto;
 }
+
+#lights{
+height: 200px;
+}
 #stockphotodiv{
     text-align: center;
+}
+
+#mountains{
+    height: 200px;
 }
 /*About section*/
 .section-title {
@@ -141,7 +156,7 @@ margin: auto;
 .vl-border3{
     border-right: 3px solid #b3c3c5;
     height: 150px;
-    
+
 
 }
   .contact-info ul {
